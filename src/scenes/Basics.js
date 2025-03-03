@@ -89,6 +89,7 @@ class Basics extends Phaser.Scene {
         // add mouse input listener to start tween chain
         this.input.on("pointerdown", () => {
             verygoodpear.setPosition(64, 64);
+            verygoodpear.setAngle(0);
             pearTweenChain.restart();
         });
 
